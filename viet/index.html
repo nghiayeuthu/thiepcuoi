@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Trân trọng kính mời bạn đến dự tiệc cưới Tuấn Nghĩa & Hoài Thu — 11h, Thứ Bảy 28/11/2026, Happy Place, Hải Đăng Plaza, Hải Phòng.">
+<meta name="description" content="Trân trọng kính mời bạn đến dự tiệc cưới Tuấn Nghĩa & Hoài Thu — 11h Thứ Bảy 28/11/2026 tại Happy Place, Hải Đăng Plaza và 10h Chủ Nhật 29/11/2026 tại số 15 đường Cây Chè, An Dương, Hải Phòng.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nghiayeuthu.github.io/thiepcuoi/viet/">
 <meta property="og:title" content="Thân mời em Việt · Thiệp cưới Tuấn Nghĩa &amp; Hoài Thu">
-<meta property="og:description" content="Trân trọng kính mời bạn đến dự tiệc cưới của chúng mình — 11h, Thứ Bảy 28/11/2026 tại Happy Place, Hải Đăng Plaza, Hải Phòng.">
+<meta property="og:description" content="Trân trọng kính mời bạn đến dự tiệc cưới của chúng mình — 11h Thứ Bảy 28/11 tại Hải Đăng Plaza và 10h Chủ Nhật 29/11/2026 tại An Dương, Hải Phòng.">
 <meta property="og:image" content="https://nghiayeuthu.github.io/thiepcuoi/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -88,7 +88,7 @@ p{margin:0 auto;max-width:34em}
 .time{margin-top:18px;font-family:var(--f-display);font-size:26px}
 .time b{font-weight:600}
 .lunar{color:var(--ink-soft);font-style:italic;font-family:var(--f-display);font-size:18px;margin-top:2px}
-.cal{margin:34px auto 0;max-width:340px;background:var(--paper);border:1px solid var(--line);padding:20px 16px 18px;border-radius:4px}
+.cal{margin:26px auto 0;max-width:340px;background:var(--paper);border:1px solid var(--line);padding:20px 16px 18px;border-radius:4px}
 .cal .mh{font-family:var(--f-display);font-size:22px;margin-bottom:10px}
 .cal .grid{display:grid;grid-template-columns:repeat(7,1fr);row-gap:6px;font-variant-numeric:tabular-nums;font-size:13px}
 .cal .dow{font-size:10px;letter-spacing:.1em;color:var(--gold);font-weight:500;padding-bottom:4px}
@@ -105,6 +105,13 @@ p{margin:0 auto;max-width:34em}
 /* ---------- Địa điểm ---------- */
 .venue-photo{margin:0 -24px 32px;aspect-ratio:3/2;overflow:hidden;max-width:none}
 .venue-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
+.event{display:grid;justify-items:center}
+.event .bigdate{margin-top:4px}
+.event .time{margin-top:10px}
+.event h3{margin-top:22px!important}
+.divider{font-family:var(--f-kanji);color:var(--seal);font-size:26px;margin:44px auto;display:flex;align-items:center;gap:16px;max-width:300px}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
+.when h2{margin-bottom:6px}
 .venue h3{font-family:var(--f-display);font-size:28px;font-weight:600;margin:0;line-height:1.2}
 .venue .hall{margin-top:6px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--seal);font-weight:500}
 .venue address{font-style:normal;margin-top:14px;color:var(--ink-soft)}
@@ -156,7 +163,7 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
     <div class="top">Save the date</div>
     <div class="to" id="heroTo" hidden>Thân gửi <b id="heroName"></b></div>
     <h1>Tuấn Nghĩa<span class="amp">&amp;</span>Hoài Thu</h1>
-    <div class="date">28 · 11 · 2026</div>
+    <div class="date">28 &amp; 29 · 11 · 2026</div>
     <a class="scroll" href="#loi-moi">Mở thiệp</a>
   </header>
 
@@ -182,21 +189,12 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
   </section>
 
   <section class="when" id="thoi-gian">
-    <p class="eyebrow">Tiệc cưới được tổ chức vào lúc</p>
-    <div class="time"><b>11 giờ 00</b> trưa</div>
-    <div class="bigdate">
-      <div class="side">Thứ Bảy</div>
-      <div class="day">28</div>
-      <div class="side">Tháng 11</div>
-    </div>
-    <div class="year">2026</div>
-    <p class="lunar">Tức ngày 20 tháng 10 năm Bính Ngọ</p>
-
-    <div class="cal" aria-label="Lịch tháng 11 năm 2026">
-      <div class="mh">Tháng Mười Một</div>
+    <p class="eyebrow">Tiệc cưới diễn ra trong</p>
+    <h2>Hai ngày <em>chung vui</em></h2>
+    <div class="cal" aria-label="Lịch tháng 11 năm 2026, đánh dấu ngày 28 và 29">
+      <div class="mh">Tháng Mười Một · 2026</div>
       <div class="grid" id="cal"></div>
     </div>
-
     <div class="count" id="count" aria-live="off">
       <div><b id="cd-d">--</b><span>Ngày</span></div>
       <div><b id="cd-h">--</b><span>Giờ</span></div>
@@ -207,21 +205,55 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
 
   <section class="venue" id="dia-diem">
     <figure class="venue-photo"><img src="../img/a7505599.jpg" alt="" loading="lazy"></figure>
-    <p class="eyebrow">Địa điểm</p>
-    <h3>Khách sạn Hải Đăng</h3>
-    <div class="hall">Tầng 2 · Happy Place · Hải Đăng Plaza</div>
-    <address>Số 19 + 35 Trần Khánh Dư,<br>Ngô Quyền, Hải Phòng</address>
-    <div class="btns">
-      <a class="btn solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Kh%C3%A1ch%20s%E1%BA%A1n%20H%E1%BA%A3i%20%C4%90%C4%83ng%20Plaza%2019%20Tr%E1%BA%A7n%20Kh%C3%A1nh%20D%C6%B0%20Ng%C3%B4%20Quy%E1%BB%81n%20H%E1%BA%A3i%20Ph%C3%B2ng">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        Chỉ đường
-      </a>
-      <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Tu%E1%BA%A5n%20Ngh%C4%A9a%20%26%20Ho%C3%A0i%20Thu&amp;dates=20261128T040000Z/20261128T070000Z&amp;location=T%E1%BA%A7ng%202%20Happy%20Place%2C%20H%E1%BA%A3i%20%C4%90%C4%83ng%20Plaza%2C%2019%2B35%20Tr%E1%BA%A7n%20Kh%C3%A1nh%20D%C6%B0%2C%20Ng%C3%B4%20Quy%E1%BB%81n%2C%20H%E1%BA%A3i%20Ph%C3%B2ng">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-        Lưu vào lịch
-      </a>
-      <button class="btn" type="button" id="copyAddr">Sao chép địa chỉ</button>
-    </div>
+    <article class="event">
+      <p class="eyebrow">Ngày thứ nhất</p>
+      <div class="bigdate">
+        <div class="side">Thứ Bảy</div>
+        <div class="day">28</div>
+        <div class="side">Tháng 11</div>
+      </div>
+      <div class="time"><b>11 giờ 00 trưa</b> · 2026</div>
+      <p class="lunar">Tức ngày 20 tháng 10 năm Bính Ngọ</p>
+      <h3>Khách sạn Hải Đăng</h3>
+      <div class="hall">Tầng 2 · Happy Place · Hải Đăng Plaza</div>
+      <address>Số 19 + 35 Trần Khánh Dư,<br>Ngô Quyền, Hải Phòng</address>
+      <div class="btns">
+        <a class="btn solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Kh%C3%A1ch%20s%E1%BA%A1n%20H%E1%BA%A3i%20%C4%90%C4%83ng%20Plaza%2019%20Tr%E1%BA%A7n%20Kh%C3%A1nh%20D%C6%B0%20Ng%C3%B4%20Quy%E1%BB%81n%20H%E1%BA%A3i%20Ph%C3%B2ng">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Chỉ đường
+        </a>
+        <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Tu%E1%BA%A5n%20Ngh%C4%A9a%20%26%20Ho%C3%A0i%20Thu&amp;dates=20261128T040000Z/20261128T070000Z&amp;location=T%E1%BA%A7ng%202%20Happy%20Place%2C%20H%E1%BA%A3i%20%C4%90%C4%83ng%20Plaza%2C%20Kh%C3%A1ch%20s%E1%BA%A1n%20H%E1%BA%A3i%20%C4%90%C4%83ng%2C%20S%E1%BB%91%2019%2B35%20Tr%E1%BA%A7n%20Kh%C3%A1nh%20D%C6%B0%2C%20Ng%C3%B4%20Quy%E1%BB%81n%2C%20H%E1%BA%A3i%20Ph%C3%B2ng">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          Lưu vào lịch
+        </a>
+        <button class="btn copy" type="button" data-copy="Tầng 2 Happy Place, Hải Đăng Plaza, Khách sạn Hải Đăng, Số 19+35 Trần Khánh Dư, Ngô Quyền, Hải Phòng">Sao chép địa chỉ</button>
+      </div>
+    </article>
+    <div class="divider" aria-hidden="true">囍</div>
+    <article class="event">
+      <p class="eyebrow">Ngày thứ hai</p>
+      <div class="bigdate">
+        <div class="side">Chủ Nhật</div>
+        <div class="day">29</div>
+        <div class="side">Tháng 11</div>
+      </div>
+      <div class="time"><b>10 giờ 00 sáng</b> · 2026</div>
+      <p class="lunar">Tức ngày 21 tháng 10 năm Bính Ngọ</p>
+      <h3>Số 15 đường Cây Chè</h3>
+      <div class="hall">Cách Thượng · Nam Sơn</div>
+      <address>Số 15 đường Cây Chè, Cách Thượng,<br>Nam Sơn, An Dương, Hải Phòng</address>
+      <div class="btns">
+        <a class="btn solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=S%E1%BB%91%2015%20%C4%91%C6%B0%E1%BB%9Dng%20C%C3%A2y%20Ch%C3%A8%2C%20C%C3%A1ch%20Th%C6%B0%E1%BB%A3ng%2C%20Nam%20S%C6%A1n%2C%20An%20D%C6%B0%C6%A1ng%2C%20H%E1%BA%A3i%20Ph%C3%B2ng">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Chỉ đường
+        </a>
+        <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Tu%E1%BA%A5n%20Ngh%C4%A9a%20%26%20Ho%C3%A0i%20Thu&amp;dates=20261129T030000Z/20261129T060000Z&amp;location=S%E1%BB%91%2015%20%C4%91%C6%B0%E1%BB%9Dng%20C%C3%A2y%20Ch%C3%A8%2C%20C%C3%A1ch%20Th%C6%B0%E1%BB%A3ng%2C%20Nam%20S%C6%A1n%2C%20An%20D%C6%B0%C6%A1ng%2C%20H%E1%BA%A3i%20Ph%C3%B2ng">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          Lưu vào lịch
+        </a>
+        <button class="btn copy" type="button" data-copy="Số 15 đường Cây Chè, Cách Thượng, Nam Sơn, An Dương, Hải Phòng">Sao chép địa chỉ</button>
+      </div>
+    </article>
   </section>
 
   <section class="album" id="album">
@@ -242,7 +274,7 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
       <div class="sig">Tuấn Nghĩa &amp; Hoài Thu</div>
     </div>
   </section>
-  <footer>28 . 11 . 2026 · Hải Phòng</footer>
+  <footer>28 &amp; 29 . 11 . 2026 · Hải Phòng</footer>
 </main>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Xem ảnh">
@@ -269,7 +301,7 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
   ['T2','T3','T4','T5','T6','T7','CN'].forEach(function(d){h+='<div class="dow">'+d+'</div>'});
   var first=(new Date(2026,10,1).getDay()+6)%7;
   for(var i=0;i<first;i++)h+='<div></div>';
-  for(var d=1;d<=30;d++){var col=(first+d-1)%7;h+='<div class="d'+(col==6?' sun':'')+(d==28?' the':'')+'">'+d+'</div>'}
+  for(var d=1;d<=30;d++){var col=(first+d-1)%7;h+='<div class="d'+(col==6?' sun':'')+(d==28||d==29?' the':'')+'">'+d+'</div>'}
   g.innerHTML=h;
 })();
 
@@ -286,11 +318,11 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
 })();
 
 // Sao chép địa chỉ
-document.getElementById('copyAddr').addEventListener('click',function(){
-  var b=this,txt='Tầng 2 Happy Place, Hải Đăng Plaza, Khách sạn Hải Đăng, Số 19+35 Trần Khánh Dư, Ngô Quyền, Hải Phòng';
+document.querySelectorAll('.copy').forEach(function(btn){btn.addEventListener('click',function(){
+  var b=this,txt=b.getAttribute('data-copy');
   function done(){b.textContent='Đã sao chép';setTimeout(function(){b.textContent='Sao chép địa chỉ'},1800)}
   try{navigator.clipboard.writeText(txt).then(done,function(){b.textContent=txt})}catch(e){b.textContent=txt}
-});
+})});
 
 // Album + lightbox
 (function(){
