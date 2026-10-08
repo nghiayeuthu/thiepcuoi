@@ -12,7 +12,7 @@ def slug(name):
 src = open("index.html", encoding="utf-8").read()
 for name in GUESTS:
     sl, n = slug(name), html.escape(name)
-    page = src.replace("img/a750", "../img/a750")
+    page = re.sub(r"([\"'(])img/", r"\1../img/", src)
     page = page.replace('content="' + BASE + '"', 'content="' + BASE + sl + '/"')
     page = re.sub(r'<meta property="og:title" content="[^"]*">',
                   f'<meta property="og:title" content="Thân mời {n} · Thiệp cưới Tuấn Nghĩa &amp; Hoài Thu">', page)
