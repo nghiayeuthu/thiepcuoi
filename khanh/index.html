@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Trân trọng kính mời bạn đến dự tiệc cưới Tuấn Nghĩa & Hoài Thu — 11h, Thứ Bảy 28/11/2026, Happy Place, Hải Đăng Plaza, Hải Phòng.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://nghiayeuthu.github.io/thiepcuoi/">
-<meta property="og:title" content="Thiệp cưới Tuấn Nghĩa & Hoài Thu · 28.11.2026">
+<meta property="og:url" content="https://nghiayeuthu.github.io/thiepcuoi/khanh/">
+<meta property="og:title" content="Thân mời em Khánh · Thiệp cưới Tuấn Nghĩa &amp; Hoài Thu">
 <meta property="og:description" content="Trân trọng kính mời bạn đến dự tiệc cưới của chúng mình — 11h, Thứ Bảy 28/11/2026 tại Happy Place, Hải Đăng Plaza, Hải Phòng.">
 <meta property="og:image" content="https://nghiayeuthu.github.io/thiepcuoi/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -38,7 +38,7 @@
 *{box-sizing:border-box}img{max-width:100%}[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{margin:0;background:#2b2427;color:var(--ink);font-family:var(--f-body);font-weight:300;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
-.backdrop{position:fixed;inset:-40px;background:url(img/a7505357.jpg) center/cover;filter:blur(28px) brightness(.55) saturate(.9);z-index:0}
+.backdrop{position:fixed;inset:-40px;background:url(../img/a7505357.jpg) center/cover;filter:blur(28px) brightness(.55) saturate(.9);z-index:0}
 .card{position:relative;z-index:1;max-width:520px;margin:0 auto;background:var(--paper);overflow:hidden;box-shadow:0 0 60px rgba(0,0,0,.35)}
 @media (min-width:600px){.card{margin-block:32px;border-radius:4px}}
 #petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
@@ -152,7 +152,7 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
 
 <main class="card">
   <header class="hero">
-    <img src="img/a7505357.jpg" alt="Tuấn Nghĩa và Hoài Thu dưới tán hoa anh đào">
+    <img src="../img/a7505357.jpg" alt="Tuấn Nghĩa và Hoài Thu dưới tán hoa anh đào">
     <div class="top">Save the date</div>
     <div class="to" id="heroTo" hidden>Thân gửi <b id="heroName"></b></div>
     <h1>Tuấn Nghĩa<span class="amp">&amp;</span>Hoài Thu</h1>
@@ -168,13 +168,13 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
     <p class="lead">Mùa hoa anh đào năm ấy, chúng mình đã cùng nhau đi qua những con phố cổ Asakusa. Nay chúng mình muốn mời bạn cùng chung vui trong ngày trọng đại nhất.</p>
     <div class="couple">
       <div class="person">
-        <figure><img src="img/a7505632.jpg" alt="Chú rể Tuấn Nghĩa" loading="lazy"></figure>
+        <figure><img src="../img/a7505632.jpg" alt="Chú rể Tuấn Nghĩa" loading="lazy"></figure>
         <div class="role">Chú rể</div>
         <div class="name">Tuấn Nghĩa</div>
       </div>
       <div class="heart" aria-hidden="true">囍</div>
       <div class="person">
-        <figure><img src="img/a7505682.jpg" alt="Cô dâu Hoài Thu" loading="lazy"></figure>
+        <figure><img src="../img/a7505682.jpg" alt="Cô dâu Hoài Thu" loading="lazy"></figure>
         <div class="role">Cô dâu</div>
         <div class="name">Hoài Thu</div>
       </div>
@@ -206,7 +206,7 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
   </section>
 
   <section class="venue" id="dia-diem">
-    <figure class="venue-photo"><img src="img/a7505599.jpg" alt="" loading="lazy"></figure>
+    <figure class="venue-photo"><img src="../img/a7505599.jpg" alt="" loading="lazy"></figure>
     <p class="eyebrow">Địa điểm</p>
     <h3>Khách sạn Hải Đăng</h3>
     <div class="hall">Tầng 2 · Happy Place · Hải Đăng Plaza</div>
@@ -235,7 +235,7 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
   </section>
 
   <section class="thanks">
-    <img src="img/a7505740.jpg" alt="" loading="lazy">
+    <img src="../img/a7505740.jpg" alt="" loading="lazy">
     <div class="in">
       <h2>Thank you</h2>
       <p>Sự hiện diện của bạn là niềm vinh hạnh và món quà ý nghĩa nhất đối với gia đình chúng mình.</p>
@@ -253,7 +253,7 @@ footer{padding:22px 16px 28px;text-align:center;font-size:11px;letter-spacing:.3
   <div class="n" id="lbN"></div>
 </div>
 
-<script>
+<script>window.GUEST='em Khánh';
 // Tên khách mời lấy từ link, ví dụ ?to=Anh%20H%C3%B9ng
 (function(){
   var n='';
@@ -298,10 +298,10 @@ document.getElementById('copyAddr').addEventListener('click',function(){
   var g=document.getElementById('gallery'),lb=document.getElementById('lb'),im=document.getElementById('lbImg'),n=document.getElementById('lbN'),cur=0,last=null;
   ids.forEach(function(id,i){
     var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Xem ảnh '+(i+1));
-    b.innerHTML='<img src="img/a750'+id+'.jpg" alt="" loading="lazy">';
+    b.innerHTML='<img src="../img/a750'+id+'.jpg" alt="" loading="lazy">';
     b.onclick=function(){last=b;show(i)};g.appendChild(b);
   });
-  function show(i){cur=(i+ids.length)%ids.length;im.src='img/a750'+ids[cur]+'.jpg';n.textContent=(cur+1)+' / '+ids.length;lb.hidden=false;document.body.style.overflow='hidden';lb.querySelector('.x').focus()}
+  function show(i){cur=(i+ids.length)%ids.length;im.src='../img/a750'+ids[cur]+'.jpg';n.textContent=(cur+1)+' / '+ids.length;lb.hidden=false;document.body.style.overflow='hidden';lb.querySelector('.x').focus()}
   function close(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}
   lb.querySelector('.x').onclick=close;
   lb.querySelector('.pv').onclick=function(e){e.stopPropagation();show(cur-1)};
