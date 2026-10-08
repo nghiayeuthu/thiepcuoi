@@ -359,7 +359,7 @@ document.querySelectorAll('.copy').forEach(function(btn){btn.addEventListener('c
   });
   function layout(){
     var w=wrap.clientWidth,hgt=wrap.clientHeight;R=Math.min(w*.36,hgt*.4,180);
-    var tw=Math.round(R*.42),th=Math.round(tw*1.3);
+    var tw=Math.round(R*.52),th=Math.round(tw*1.3);
     wrap.style.setProperty('--tw',tw+'px');wrap.style.setProperty('--th',th+'px');
     tiles.forEach(function(t){t.el.style.transform='rotateY('+t.th+'deg) rotateX('+t.phi+'deg) translateZ('+R+'px)';
       var c=Math.cos(t.phi*Math.PI/180);t.px=c*Math.sin(t.th*Math.PI/180);t.py=-Math.sin(t.phi*Math.PI/180);t.pz=c*Math.cos(t.th*Math.PI/180)});
